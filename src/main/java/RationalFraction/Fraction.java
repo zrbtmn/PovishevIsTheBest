@@ -81,13 +81,13 @@ public class Fraction implements Comparable<Fraction> {
         else return 0;
     }
 
-    // public Fraction subFraction(final Fraction subtractablle){
-    //     final double otherFractionNumerator = subtractablle.getTop();
-    //     final double otherFractionDenuminater = subtractablle.getBottom();
-    //     denuminater = denuminater * otherFractionDenuminater;
-    //     numerator = (numerator * otherFractionDenuminater - otherFractionNumerator * denuminater);
-    //     return new Fraction(numerator, denuminater);
-    // }
+    public Fraction subFraction(final Fraction subtractablle){
+        final double otherFractionNumerator = subtractablle.getTop();
+        final double otherFractionDenuminater = subtractablle.getBottom();
+        denuminater = denuminater * otherFractionDenuminater;
+        numerator = (numerator * otherFractionDenuminater - otherFractionNumerator * denuminater);
+        return new Fraction(numerator, denuminater);
+    }
 
     // public Fraction multiFraction(final Fraction multipliable){
     //     final double otherFractionNumerator = multipliable.getTop();
