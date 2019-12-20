@@ -55,18 +55,18 @@ public class Fraction implements Comparable<Fraction> {
         return new Fraction(numerator, denuminater);
     }
 
-    // @Override
-    // public String toString() {
-    //     String txt;
-    //     if (numerator == 0){
-    //         txt = "[0]";
-    //     }
-    //     else if (denuminater == 1){
-    //         txt = String.format("[%.0f]", numerator);
-    //     }
-    //     else txt = String.format("[%.0f / %.0f]", numerator, denuminater);
-    //     return txt;
-    // }
+    @Override
+    public String toString() {
+        String txt;
+        if (numerator == 0){
+            txt = "[0]";
+        }
+        else if (denuminater == 1){
+            txt = String.format("[%.0f]", numerator);
+        }
+        else txt = String.format("[%.0f / %.0f]", numerator, denuminater);
+        return txt;
+    }
 
     @Override
     public int compareTo(final Fraction compariable) {
