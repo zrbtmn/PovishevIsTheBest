@@ -102,11 +102,11 @@ public class Fraction implements Comparable<Fraction> {
         return new Fraction(numerator, denuminater);
     }
 
-    // public Fraction divFraction(final Fraction multipliable){
-    //     final double otherFractionNumerator = multipliable.getTop();
-    //     final double otherFractionDenuminater = multipliable.getBottom();
-    //     numerator *= otherFractionDenuminater;
-    //     denuminater *= otherFractionNumerator;
-    //     return new Fraction(numerator, denuminater);
-    // }
+    public Fraction divFraction(final Fraction multipliable){
+        final double otherFractionNumerator = multipliable.getTop();
+        final double otherFractionDenuminater = multipliable.getBottom();
+        numerator *= otherFractionDenuminater;
+        denuminater *= otherFractionNumerator;
+        return new Fraction(numerator, denuminater);
+    }
 }
