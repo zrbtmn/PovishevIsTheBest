@@ -97,10 +97,10 @@ public class Fraction implements Comparable<Fraction> {
         return new Fraction(numerator, denuminater);
     }
 
-    // public Fraction multiNumber(final double multipliable){
-    //     numerator *= multipliable;
-    //     return new Fraction(numerator, denuminater);
-    // }
+    public Fraction multiNumber(final double multipliable){
+        numerator *= multipliable;
+        return new Fraction(numerator, denuminater);
+    }
 
     // public Fraction divFraction(final Fraction multipliable){
     //     final double otherFractionNumerator = multipliable.getTop();
