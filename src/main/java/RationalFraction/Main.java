@@ -40,5 +40,6 @@ public class Main {
         } catch (IllegalArgumentException ex) {
             ex.getMessage();
         }
+        System.out.println("The program works great!");
     }
 }
